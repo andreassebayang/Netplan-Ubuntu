@@ -1,13 +1,13 @@
 # Netplan-Ubuntu18up
 Update to changes network interfaces respository
 
-#Netplan
+# Netplan
 
-##The network configuration abstraction renderer
+## The network configuration abstraction renderer
 
 Netplan is a utility for easily configuring networking on a linux system. You simply create a YAML description of the required network interfaces and what each should be configured to do. From this description Netplan will generate all the necessary configuration for your chosen renderer tool.
 
-##How does it work?
+## How does it work?
 
 Netplan reads network configuration from **/etc/netplan/*.yaml** *which are written by administrators, installers, cloud image instantiations, or other OS deployments. During early boot, Netplan generates backend specific configuration files in /run to hand off control of devices to a particular networking daemon.*
 
@@ -20,9 +20,9 @@ Netplan currently works with these supported renderers
   * [Systemd-networkd](https://manpages.ubuntu.com/manpages/bionic/man5/systemd.network.5.html)
 
 
-#How do I use it?
+#vHow do I use it?
 
-##Configuration
+##vConfiguration
 
 **network:**
   **version: 2**
@@ -33,7 +33,7 @@ This will make NetworkManager manage all devices (and by default, any ethernet d
 
 Using networkd as a renderer does not let devices automatically come up using DHCP; each interface needs to be specified in a file in **/etc/netplan** for its configuration to be written and for it to be used in networkd.
 
-##Commands
+##vCommands
 
 Netplan uses a set of subcommands to drive its behavior:
 
