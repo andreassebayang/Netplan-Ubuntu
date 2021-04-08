@@ -23,11 +23,11 @@ Netplan currently works with these supported renderers
 ## How do I use it?
 
 ### Configuration
-'''
+```
 **network:**
   **version: 2**
     **renderer: NetworkManager**
- '''
+ ```
 
 This will make NetworkManager manage all devices (and by default, any ethernet device will come up with DHCP once carrier is detected).
 
