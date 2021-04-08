@@ -37,6 +37,6 @@ Using networkd as a renderer does not let devices automatically come up using DH
 
 Netplan uses a set of subcommands to drive its behavior:
 
-- [x] **netplan generate**: Use **/etc/netplan** to generate the required configuration for the renderers.
-- [x] **netplan apply**: Apply all configuration for the renderers, restarting them as necessary.
-- [x] **netplan try**: Apply configuration and wait for user confirmation; will roll back if network is broken or no confirmation is given.
+-  **netplan generate** : Use **/etc/netplan** to generate the required configuration for the renderers.
+-  **netplan apply** : Apply all configuration for the renderers, restarting them as necessary.
+-  **netplan try** : Apply configuration and wait for user confirmation; will roll back if network is broken or no confirmation is given.
