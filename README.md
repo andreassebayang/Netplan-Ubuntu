@@ -11,7 +11,8 @@ Netplan is a utility for easily configuring networking on a linux system. You si
 
 Netplan reads network configuration from **/etc/netplan/*.yaml** *which are written by administrators, installers, cloud image instantiations, or other OS deployments. During early boot, Netplan generates backend specific configuration files in /run to hand off control of devices to a particular networking daemon.*
 
-![image](https://user-images.githubusercontent.com/79214343/114074174-4a2bc700-98ce-11eb-9118-e857d163b1fd.png)
+![image of Netplan Design](![image](https://user-images.githubusercontent.com/79214343/114077942-89f4ad80-98d2-11eb-9d5a-83a6efc88fa4.png)
+
 
 
 Netplan currently works with these supported renderers
